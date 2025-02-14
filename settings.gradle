@@ -1,0 +1,4 @@
+rootProject.name = 'E-Learning'
+
+include 'discovery-server'
+include 'common-module'

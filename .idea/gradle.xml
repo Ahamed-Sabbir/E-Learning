@@ -7,14 +7,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/common-module" />
-        <option name="modules">
-          <set>
             <option value="$PROJECT_DIR$/common-module" />
+            <option value="$PROJECT_DIR$/discovery-server" />
           </set>
         </option>
       </GradleProjectSettings>
