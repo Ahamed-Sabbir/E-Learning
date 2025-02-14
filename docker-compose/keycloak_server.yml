@@ -1,0 +1,21 @@
+services:
+  keycloak-server1:
+    image: quay.io/keycloak/keycloak:${KEYCLOAK_VERSION:-latest}
+    hostname: keycloak-server
+    ports:
+      - "8080:8080"
+    command:
+      - "start-dev"
+    environment:
+#      - "JAVA_OPTS=-Djboss.http.port=8080"
+      - "KEYCLOAK_ADMIN=admin"
+      - "KEYCLOAK_ADMIN_PASSWORD=admin"
+      - "KC_DB=postgres"
+      - "KC_DB_URL=jdbc:postgresql://host.docker.internal:5432/keycloak"
+      - "KC_DB_SCHEMA=public"
+      - "KC_DB_USERNAME=postgres"
+      - "KC_DB_PASSWORD=root"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - ${GLOBAL_NETWORK:-keycloak}
