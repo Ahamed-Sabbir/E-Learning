@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-module/E-Learning.common-module.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-module/E-Learning.common-module.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-service/E-Learning.user-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-service/E-Learning.user-service.main.iml" />
     </modules>
   </component>
 </project>

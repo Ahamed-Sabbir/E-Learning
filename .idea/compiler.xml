@@ -9,6 +9,7 @@
         </processorPath>
         <module name="E-Learning.common-module.main" />
         <module name="E-Learning.user-service.main" />
+        <module name="E-Learning.content-delivery-service.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
