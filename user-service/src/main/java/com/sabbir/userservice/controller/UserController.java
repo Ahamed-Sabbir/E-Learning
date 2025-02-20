@@ -32,6 +32,7 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<CustomHttpResponse> addRegularUser(@RequestBody User user) {
+        System.out.println(user);
         try {
             userService.validateEmail(user.getEmail());
             userService.validatePassword(user.getPassword());
